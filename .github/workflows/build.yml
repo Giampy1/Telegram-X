@@ -46,7 +46,9 @@ jobs:
       run: chmod +x scripts/setup.sh
 
     - name: Run setup script
-      run: ./scripts/setup.sh
+      run: |
+         export TERM=xterm
+         ./scripts/setup.sh
 
     - name: Build Telegram X
       run: ./gradlew assembleUniversalRelease
