@@ -1,4 +1,4 @@
-name: Build Telegram X
+name: Build TelegramX
 
 on:
   push:
